@@ -1,0 +1,39 @@
+mixin section(sectionDesc,sectionId)
+        .section__title(id=`${sectionId}`)
+            p.section__icon
+                i.fas.fa-dove
+                i.fas.fa-heartbeat
+                i.fas.fa-dove
+            p.section__desc= sectionDesc
+
+
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=7")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0") 
+        title index
+        link(rel="stylesheet", href="../css/style.css")
+        link(rel="stylesheet", href="../css/reset.css")
+        script(src="https://kit.fontawesome.com/b4b7fd911f.js")
+    body
+        include ./banner.jade
+        // End Banner 
+
+
+        include ./couple.jade 
+        // End Couple 
+        +section('Our Love Story', 'Story')
+
+        include ./time_line.jade
+        // End Time_line
+
+        +section('Our Gallery', 'Gallery')
+
+        include ./lorem_grid.jade
+        // End Lorem_grid
+        include ./site__footer.jade
+        // End site__footer
+

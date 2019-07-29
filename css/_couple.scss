@@ -1,0 +1,55 @@
+.couple{
+    margin-top: 50px;
+    //margin-bottom: 50px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+
+    &__item{
+        display: flex;
+    }
+
+    &__img{
+        width: 50%;
+        flex-basis: auto;
+        height: 455px;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    &__detail{
+        width: 50%;
+        flex-basis: auto;
+        background-color: #f7faf9;
+        padding: 40px;
+    }
+
+    .heading{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    &__desc{
+        color: #767878;
+        line-height: 1.4;
+    }
+
+    &__sign{
+        font-family: "Great Vibes", cursive;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .couple{
+        &__item{
+            flex-direction: column;
+        }
+
+        &__detail, &__img{
+            width: 100%;
+        }
+    }
+}

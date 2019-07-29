@@ -1,0 +1,73 @@
+mixin img(url)
+    img(src=`${urlImg + url+'.jpg'}` alt=`${url}`)
+- const urlImg = "../images/"
+.time_line.container
+    .time_line__item
+        .time_line__desc.borderT_none.text-right
+            p.time_line__title
+                | FIRST MEET
+            span.time_line__date 12/07/2014
+            p.time_line__detail
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                | which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                | which was created for the bliss of souls like mine. I am so happy, my dear friend,
+        .time_line__img
+            .heart
+                i.fas.fa-heart
+            .carousel__container
+                .carousel
+                    .carousel__item
+                        +img('img-15')
+                    .carousel__item
+                        +img('img-4')
+                    .carousel__item
+                        +img('heart-529607_1920')
+
+    .time_line__item
+        .time_line__img
+            .carousel__container
+                .carousel
+                    .carousel__item
+                        +img('img-4j')
+                    .carousel__item
+                        +img('heart-4340306_1920')
+                    .carousel__item
+                        +img('heart-529607_1920')
+        .time_line__desc
+            .heart
+                i.fas.fa-heart
+            p.time_line__title
+                | FIRST DATE
+            span.time_line__date 12/12/2014
+            p.time_line__detail
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                | which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                | which was created for the bliss of souls like mine. I am so happy, my dear friend,
+
+    .time_line__item
+        .time_line__desc.text-right
+            p.time_line__title
+                | PROPOSAL
+            span.time_line__date 12/07/2015
+            p.time_line__detail
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                | which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                | which was created for the bliss of souls like mine. I am so happy, my dear friend,
+        .time_line__img
+            .heart
+                i.fas.fa-heart
+            +img('img-15')
+            
+    .time_line__item
+        .time_line__img
+            +img('img-1(3)')
+        .time_line__desc
+            .heart
+                i.fas.fa-heart
+            p.time_line__title
+                | ENAGAGEMENT
+            span.time_line__date 12/12/2016
+            p.time_line__detail
+                | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                | which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot,
+                | which was created for the bliss of souls like mine. I am so happy, my dear friend,
